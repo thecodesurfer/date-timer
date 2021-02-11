@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #173F5F;
+    color: #6da8d8;
+    font-family: 'Unica One', cursive;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+#counter {
+    display: flex;
+    font-size: 4rem;
+    text-shadow: 3px 3px #396488;
+}
+
+#counter > div {
+    margin: 0.5rem;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: #6da8d8;
+    margin: 1.5rem 1rem 1rem 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: background-color ease 0.2s, color ease 0.2s;
+    outline: none;
+}
+
+button:hover {
+    background-color: #6da8d8;
+    color: #173F5F;
+}
+
+#date {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
