@@ -15,6 +15,8 @@ function initializeCounter()
 
     const targetDate =  url.searchParams.get('targetdate');
 
+    console.log(targetDate)
+
     if(targetDate)
     {
         const date = new Date(targetDate);
@@ -41,14 +43,16 @@ function initializeCounter()
     else {
         clearInterval(timerID);
 
-        const input = prompt('Target date (YYYY-MM-DD hh:mm:ss):');
+        // const input = prompt('Target date (YYYY-MM-DD hh:mm:ss):');
 
-        if(input) {
-            // window.localStorage.setItem('targetDate', input);
-            url.searchParams.set('targetdate', new Date(input).toISOString())
-        }
+        // console.log(input);
 
-        initializeCounter();
+        // if(input) {
+        //     // window.localStorage.setItem('targetDate', input);
+        //     url.searchParams.set('targetdate', new Date(input).toISOString())
+        // }
+
+        // initializeCounter();
     }
 }
 
