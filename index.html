@@ -12,26 +12,61 @@
         <title>Timer</title>
     </head>
     <body>
+
         <div class="wrapper">
-            <div id="date"></div>
-            <div id="counter">
-                <div>
-                    <span id="counter-days">00</span>
-                    <small>d</small>
+
+            <div id="wrapper-counter-form">
+                <div class="flex counter-input-group">
+                    <div>
+                        <input id="input-day" type="number" placeholder="00" />
+                        <div>Day</div>
+                    </div>
+                    <div>
+                        <input id="input-month" type="number" placeholder="00" />
+                        <div>Month</div>
+                    </div>
+                    <div>
+                        <input id="input-year" type="number" placeholder="0000" />
+                        <div>Year</div>
+                    </div>
                 </div>
                 <div>
-                    <span id="counter-hours">00</span>
-                    <small>h</small></div>
-                <div>
-                    <span id="counter-mins">00</span>
-                    <small>m</small></div> 
-                <div>
-                    <span id="counter-secs">00</span>
-                    <small>s</small>
-                </div> 
+                    <button id="btnStartTimer">Start timer</button>
+                </div>
             </div>
-            <!-- <button id="counter-clear">Clear counter</button> -->
+
+            <div id="wrapper-counter" class="hide">
+                <div>
+                    <div id="counter-targetdate"></div>
+                </div>
+                <div class="flex" id="counter">
+                    <div class="counter-control">
+                        <span id="counter-days">000</span>
+                        <span>d</span>
+                    </div>
+                    <div class="counter-control">
+                        <span id="counter-hours">00</span>
+                        <span>h</span>
+                    </div>
+                    <div class="counter-control">
+                        <span id="counter-minutes">00</span>
+                        <span>m</span>
+                    </div>
+                    <div class="counter-control">
+                        <span id="counter-seconds">00</span>
+                        <span>s</span>
+                    </div>
+                </div>
+                <div>
+                    <button id="btnClearTimer">Clear timer</button>
+                </div>
+            </div>
+
         </div>
+
+        <footer>
+           <span>Created by <a href="https://github.com/thecodesurfer" target="_blank">@thecodesurfer</a></span>
+        </footer>
 
         <script src="lib/moment.min.js"></script>
         <script src="index.js"></script>
